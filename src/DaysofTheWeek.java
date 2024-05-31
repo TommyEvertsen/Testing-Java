@@ -1,0 +1,11 @@
+public enum DaysofTheWeek {
+
+SUNDAY,
+MONDAY,
+TUESDAY,
+WEDNESDAY,
+THURSDAY,
+FRIDAY,
+SATURDAY;
+    
+}

@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.LinkedList;
 
 
@@ -60,5 +61,57 @@ public class App {
         //ArrayLists are better for finding things in them, Linkedlists are better for adding and removing items.
         ArrayList<String> carsArray = new ArrayList<>();
         LinkedList<String> carsLst = new LinkedList<>();
+
+
+
+        //Using Enums
+        DaysofTheWeek day = DaysofTheWeek.FRIDAY;
+
+        if(day == DaysofTheWeek.FRIDAY){
+            System.out.println("Friday yeeeah");
+        }
+
+       for (DaysofTheWeek allDays : DaysofTheWeek.values()) {
+          System.out.println(allDays); 
+       }
+
+       System.out.println(Cereals.STRATCHER.levelOfDeliciousness); 
+
+
+
+       //Hasmaps
+       HashMap<String, Integer> employeeID = new HashMap<>();
+
+       employeeID.put("Tommy", 1310);
+       employeeID.put("Stratcher", 2611);
+       employeeID.put("The old one", 131087329);
+
+       System.out.println(employeeID);
+
+       System.out.println(employeeID.get("Tommy")); 
+
+       System.out.println(employeeID.containsKey("Stratcher"));
+       System.out.println(employeeID.containsKey("Steffen"));
+
+       System.out.println(employeeID.containsValue(1310));
+       System.out.println(employeeID.containsValue(2544));
+
+
+
+       //Exeption handling
+
+       try {
+       int myInt = Integer.parseInt("Stefen");
+       }
+       catch (Exception e) {
+       System.out.println("Yo dude you cant do that, ");
+       }
+       finally{
+        //This will always show if there is exeption or not
+        System.out.println("This is from the finally block");
+        Goh.deathSound();
+       }
+
+
     }
 }
