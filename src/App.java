@@ -113,5 +113,14 @@ public class App {
        }
 
 
+       //Scanner
+        
+       EnterName enterName = new EnterName();
+
+       enterName.entername();
+       enterName.enterAge();
+ 
+       
+      
     }
 }

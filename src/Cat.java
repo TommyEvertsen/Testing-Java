@@ -1,6 +1,5 @@
 
 
-
 public class Cat extends Enemies {
 
     @Override
