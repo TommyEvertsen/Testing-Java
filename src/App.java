@@ -1,7 +1,9 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.LinkedList;
+import java.util.Set;
 
 
 public class App {
@@ -121,6 +123,28 @@ public class App {
        enterName.enterAge();
  
        
+       //Sets and hashsets
+       //Almost the same as array list but cannot have duplicate entries
+       Set<String> humans = new HashSet<>();
+       
+       humans.add("Kalvajegern");
+       humans.add("Stratcher");
+       humans.add("Stratcher");
+
+       humans.remove("Kalvajegern");
+
+       System.out.println(humans);
+
+       //Cool way to remove duplicates from array lists - turn it into hashset
+       ArrayList<String> humansList = new ArrayList<>();
+       humansList.add("Steffen");
+       humansList.add("Steffen");
+       humansList.add("Tommy");
+       System.out.println(humansList);
+
+       Set<String> humansHashSet = new HashSet<>();
+       humansHashSet.addAll(humansList);
+       System.out.println(humansHashSet);
       
     }
 }
