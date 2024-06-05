@@ -145,6 +145,10 @@ public class App {
        Set<String> humansHashSet = new HashSet<>();
        humansHashSet.addAll(humansList);
        System.out.println(humansHashSet);
+
+       ArrayAndLists list = new ArrayAndLists();
+       list.addListItmes("Mygg");
+       System.out.println(list.returnArray());
       
     }
 }
