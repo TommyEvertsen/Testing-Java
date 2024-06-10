@@ -149,6 +149,13 @@ public class App {
        ArrayAndLists list = new ArrayAndLists();
        list.addListItmes("Mygg");
        System.out.println(list.returnArray());
-      
+     
+       
+       //Diffrent loops in java
+       Loops myLoops = new Loops();
+       myLoops.foreachLoop();
+       myLoops.forLoop();
+       myLoops.iteratorLoop();
+       myLoops.lambdaLoop();
     }
 }
