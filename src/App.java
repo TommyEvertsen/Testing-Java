@@ -157,5 +157,17 @@ public class App {
        myLoops.forLoop();
        myLoops.iteratorLoop();
        myLoops.lambdaLoop();
+
+
+       //Using getters and setter
+       GettersAndSetters getAndSet = new GettersAndSetters();
+       getAndSet.setName("Kalv");
+       System.out.println(getAndSet.getName()); 
+
+       //Time and date
+       TimeAndDate time = new TimeAndDate();
+       time.currentTime();
+       time.currentTimeAndDate();
+       time.dateFormatter();
     }
 }
