@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.Set;
 
 
-public class App {
+public class Main {
     public static void main(String[] args) throws Exception {
 
         System.out.println("Hello, World!");
@@ -169,5 +169,14 @@ public class App {
        time.currentTime();
        time.currentTimeAndDate();
        time.dateFormatter();
+
+       //Interface is like a blueprint, can add as many as we want to classes
+       InterfaceShowcase rauram = new InterfaceClass();
+       rauram.hide();
+       rauram.run();
+
     }
+
+    
+     
 }
