@@ -175,6 +175,11 @@ public class Main {
        rauram.hide();
        rauram.run();
 
+       //Casting
+       Casting cast = new Casting();
+       cast.ImplicitCasting();
+       cast.ExplicitCasting();
+       cast.ParseCasting();
     }
 
     
