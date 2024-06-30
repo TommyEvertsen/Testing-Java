@@ -181,9 +181,15 @@ public class Main {
        cast.ExplicitCasting();
        cast.ParseCasting();
 
-       
-    }
+       //Annotations
+       JavaAnnotationsTestingClass annotationsClass = new JavaAnnotationsTestingClass("Kalv");
+       if ( annotationsClass.getClass().isAnnotationPresent(JavaAnnotations.class)) {
+       System.out.println("This class has annotations" + annotationsClass);
+      } else {
+        System.out.println("This class does not have annotations");
+      }
 
     
      
+ }
 }
