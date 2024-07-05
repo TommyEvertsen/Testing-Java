@@ -1,8 +1,13 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
+import java.util.Scanner;
 import java.util.Set;
 
 
@@ -189,7 +194,48 @@ public class Main {
         System.out.println("This class does not have annotations");
       }
 
-    
+     //Files
+     try {
+      File myFile = new File("filename.txt");
+      if (myFile.createNewFile()) {
+        System.out.println("File created: " + myFile.getName());
+      } else {
+        System.out.println("File already exists.");
+      }
+    } catch (IOException e) {
+      System.out.println("An error occurred.");
+      e.printStackTrace();
+    }
+
+
+     try {
+      FileWriter myWriter = new FileWriter("filename.txt");
+      myWriter.write("Files in Java might be tricky, but it is fun enough!");
+      myWriter.close();
+      System.out.println("Successfully wrote to the file.");
+    } catch (IOException e) {
+      System.out.println("An error occurred.");
+      e.printStackTrace();
+    }
+
+
+     try {
+      File myObj = new File("filename.txt");
+      Scanner myReader = new Scanner(myObj);
+      while (myReader.hasNextLine()) {
+        String data = myReader.nextLine();
+        System.out.println(data);
+      }
+      myReader.close();
+    } catch (FileNotFoundException e) {
+      System.out.println("An error occurred.");
+      e.printStackTrace();
+    }
+
+  }
+
+  
+
+  }
      
- }
-}
+ 
